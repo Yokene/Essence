@@ -70,6 +70,7 @@ body::-webkit-scrollbar {
     color: black;
     font-size: 20px;
     transition: box-shadow 0.3s ease;
+    cursor: pointer;
 }
 
 .main-button:hover{
