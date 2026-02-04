@@ -1,0 +1,77 @@
+body {
+    padding: 0;
+    margin: 0;
+    font-family: "Inter", sans-serif;
+    
+    /* Скрываем скролл только для самой страницы */
+    -ms-overflow-style: none;  /* IE/Edge */
+    scrollbar-width: none;     /* Firefox */
+    overflow-y: scroll;        /* Оставляем прокрутку рабочей */
+}
+
+/* Скрываем для WebKit (Chrome/Safari) ТОЛЬКО у body */
+body::-webkit-scrollbar {
+    display: none; 
+    width: 0;
+    height: 0;
+}
+
+::-webkit-scrollbar {
+    display: none;
+  }
+
+.main-container{
+    display: flex;
+    min-height: 100vh;
+    align-items: center;
+    justify-content: flex-start;
+
+    padding-left: 80px;
+}
+
+.hero-content{
+    max-width: 750px;
+}
+
+.main-bg{
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.main-h2{
+    font-size: 65px;
+    margin-top: 15px;
+    font-family: "Inter", sans-serif;
+}
+
+.main-p{
+    font-size: 20px;
+    margin-top: 15px;
+    font-weight: bold;
+    color: rgb(70, 70, 70);
+    font-family: "Inter", sans-serif;
+}
+
+.main-button{
+    width: 270px;
+    height: 60px;
+    margin-top: 40px;
+    border-radius: 30px;
+    border: 2px black solid;
+    
+    background: rgba(255, 255, 255, 0.25); /* полупрозрачность */
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px); /* для Safari */
+
+    color: black;
+    font-size: 20px;
+    transition: box-shadow 0.3s ease;
+}
+
+.main-button:hover{
+    box-shadow: 0 0 0 1px black;
+}
