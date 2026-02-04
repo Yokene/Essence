@@ -120,7 +120,7 @@ header{
 
 .nav-btn{
     position: relative;
-    display: inline-flex;   /* важно */
+    display: inline-flex;
     align-items: center;
     justify-content: center;
 
