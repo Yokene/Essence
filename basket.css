@@ -27,8 +27,7 @@
     gap: 15px;
 
     overflow-y: auto;
-    flex: 1;
-    min-height: 0;
+
     padding-right: 5px;
 }
 
