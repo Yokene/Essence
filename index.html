@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <link rel="stylesheet" href="scroll.css">
     <link rel="stylesheet" href="basket.css">
-    <link rel="icon" href="Logo/logo-icon-light-transparent.png">
+    <link rel="icon" href="Logo/logo-icon-dark-transparent.png">
 
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -214,10 +214,15 @@
         </nav>
 
     <span class="main-basket">
-        <h3 class="basket-h3">Кiлькiсть товарiв: <span class="basket-count" id="cardCount">0</span></h3>
+
+        <div class="cart-delete">
+            <h3 class="basket-h3">Кiлькiсть товарiв: <span class="basket-count" id="cardCount">0</span></h3>
+            <button id="deleteBtn">Видалити все</button>
+        </div>
+
         <div class="cart-summary">
 
-            <h3>Сумма: <span id="cartTotal">$0</span></h3>
+            <h3 class="sum-h3">Сумма: <span id="cartTotal">$0</span></h3>
             <button id="checkoutBtn">Оплатити</button>
         </div>
         <div id="cartItems" class="cart-items"></div>

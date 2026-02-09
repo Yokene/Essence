@@ -80,6 +80,12 @@ document.addEventListener("DOMContentLoaded", () => {
             renderCart();
             updateCardBorders(); // 🔹 рамки карточек синхронизированы
         }
+
+        if (e.target.id === "deleteBtn") {
+            cart = []
+            renderCart();
+            updateCardBorders();
+        }
     });
 
     // 🔹 Открыть корзину

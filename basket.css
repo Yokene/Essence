@@ -44,6 +44,7 @@
     flex-direction: column;
     flex: 1;
     overflow: hidden;
+
 }
 
 #closeCartBtn{
@@ -69,6 +70,9 @@
     scale: 1.05;
 }
 
+#deleteBtn:hover{
+    scale: 1.05;
+}
 
 .cart-item{
     display: flex;
@@ -116,6 +120,14 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    height: 55px;
+}
+
+.cart-delete{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 55px;
 }
 
 #checkoutBtn{
@@ -127,6 +139,19 @@
     cursor: pointer;
     font-weight: 600;
     transition: 0.3s ease;
+    width: 175px;
+}
+
+#deleteBtn{
+    font-size: 19px;
+    padding: 8px 18px;
+    border-radius: 25px;
+    border: 3px solid red;
+    background: white;
+    cursor: pointer;
+    font-weight: 600;
+    transition: 0.3s ease;
+    width: 175px;
 }
 
 .top-line{
@@ -147,8 +172,11 @@
 }
 
 .basket-h3{
-    margin: 0px;
-    margin-top: 10px;
+    font-size: 20px;
+}
+
+.sum-h3{
+    font-size: 20px;
 }
 
 .basket-btn.active{
