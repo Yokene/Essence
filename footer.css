@@ -34,9 +34,9 @@ footer{
     inset: 0;
 
     background: rgba(0,0,0,0.25);
-    backdrop-filter: blur(10px);
+    backdrop-filter: blur(px);
     -webkit-backdrop-filter: blur(10px);
-    background: rgba(255,255,255,0.7);
+    background: rgba(255,255,255,0.5);
 
     z-index: 0;
 }
@@ -89,25 +89,25 @@ footer{
     font-weight: bold;
 }
 
-.social {
+.social-footer {
     font-size: 32px;
     color: black;
     transition: 0.3s;
 }
 
-.social:hover{
+.social-footer:hover{
     scale: 1.1;
 }
 
-.social.instagram:hover {
+.social-footer.instagram-ftr:hover {
     color: #e1306c;
 }
 
-.social.tiktok:hover {
+.social-footer.tiktok-ftr:hover {
     color: #000000;
 }
 
-.social.facebook:hover {
+.social-footer.facebook-ftr:hover {
     color: #1877f2;
 }
 

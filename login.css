@@ -1,0 +1,172 @@
+.login-overlay{
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.6);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    z-index: 9999;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.4s ease;
+    pointer-events: none;
+}
+
+.login-window{
+    width: 350px;
+    height: 550px;
+    background: white;
+    padding: 15px;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+
+    transform: translateY(-50px);
+    opacity: 0;
+
+    transition: transform 0.4s ease, opacity 0.4s ease;
+}
+
+.login-overlay.active {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: all;
+}
+
+.login-overlay.active .login-window {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+
+.login-title{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 30px;
+    margin: 0;
+    position: relative;
+}
+
+.login-main{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.login-input{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 25px;
+    cursor: pointer;
+}
+
+.input{
+    width: 290px;
+    height: 35px;
+    border-radius: 10px;
+    border: 1px solid black;
+    padding-left: 10px;
+    margin-top: 15px;
+    transition: 0.3s ease;
+}
+
+.input:hover{
+    box-shadow: 0 0 0 1px black;
+}
+
+.name-input{
+    font-size: 17px;
+    font-weight: bold;
+}
+
+.login-submit{
+    width: 306px;
+    height: 47px;
+    border-radius: 27px;
+    background: white;
+    font-size: 19px;
+    font-weight: bold;
+    transition: 0.3s ease;
+}
+
+.login-submit:hover{
+    box-shadow: 0 0 0 2px black;
+    cursor: pointer;
+}
+
+.submit-btn{
+    padding-bottom: 30px;
+}
+
+#closeLoginBtn{
+    position: absolute;
+    right: 0;
+}
+
+#closeLogin{
+    border: none;
+    user-select: none;
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+    background: none;
+    transition: 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.login-h1{
+    margin: 5px;
+}
+
+.social-btn{
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 20px 0 20px;
+    border-radius: 25px;
+    border: 2px solid transparent; /* Рамка уже есть, но её не видно */
+    transition: 0.3s ease;
+
+    background: none;
+}
+
+.login-social-img{
+    width: 35px;
+    height: auto;
+}
+
+.social-login{
+    margin-top: auto;
+    padding-bottom: 35px;
+}
+
+.social-icons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.3s ease;
+}
+
+.google:hover{
+    border: 2px solid #4285F4;
+    cursor: pointer;
+}
+
+.apple:hover{
+    border: 2px solid black;
+    cursor: pointer;
+}
+
+.facebook:hover{
+    border: 2px solid #3B5998;
+    cursor: pointer;
+}

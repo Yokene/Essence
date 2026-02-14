@@ -16,8 +16,8 @@ document.getElementById("about-us").addEventListener('click', function(){
     })
 })
 
-document.getElementById("footer-us").addEventListener('click', function(){
-    document.getElementById("footer-us-btn").scrollIntoView({
+document.getElementById("carousel-us").addEventListener('click', function(){
+    document.getElementById("carousel-us-btn").scrollIntoView({
         behavior: "smooth"
     })
 })

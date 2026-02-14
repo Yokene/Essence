@@ -3,5 +3,9 @@
 }
 
 #about-us-btn {
-    scroll-margin-top: 75px; /* примерно высота хедера + небольшой запас */
+    scroll-margin-top: 170px; /* примерно высота хедера + небольшой запас */
+}
+
+#carousel-us-btn{
+    scroll-margin-top: 120px;
 }

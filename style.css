@@ -18,7 +18,7 @@ body::-webkit-scrollbar {
 
 ::-webkit-scrollbar {
     display: none;
-  }
+}
 
 .main-container{
     display: flex;
@@ -40,19 +40,20 @@ body::-webkit-scrollbar {
     height: 100%;
     object-fit: cover;
     z-index: -1;
+    border-bottom: 2px solid black;
 }
 
 .main-h2{
     font-size: 65px;
     margin-top: 15px;
     font-family: "Inter", sans-serif;
+    margin-bottom: 15px;
 }
 
 .main-p{
     font-size: 20px;
     margin-top: 15px;
     font-weight: bold;
-    color: rgb(70, 70, 70);
     font-family: "Inter", sans-serif;
 }
 
@@ -71,8 +72,25 @@ body::-webkit-scrollbar {
     font-size: 20px;
     transition: box-shadow 0.3s ease;
     cursor: pointer;
+    font-weight: bold;
 }
 
 .main-button:hover{
     box-shadow: 0 0 0 1px black;
+}
+
+.special-font{
+    font-family: "Parisienne", cursive;
+    font-size: 80px;
+}
+
+.reveal {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.reveal.active{
+    opacity: 1;
+    transform: translateY(0);
 }

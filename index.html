@@ -11,12 +11,23 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <link rel="stylesheet" href="scroll.css">
     <link rel="stylesheet" href="basket.css">
+    <link rel="stylesheet" href="carousel.css">
+    <link rel="stylesheet" href="login.css">
     <link rel="icon" href="Logo/logo-icon-dark-transparent.png">
+    <link rel="stylesheet" href="second-screen.css">
 
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Limelight&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Parisienne&display=swap" rel="stylesheet">
 
     <title>Essence</title>
 </head>
@@ -27,7 +38,7 @@
     <div class="navigation">
         <p id="collection" class="nav-btn">КОЛЕКЦІЯ</p>
         <p id="about-us" class="nav-btn">ПРО НАС</p>
-        <p id="footer-us" class="nav-btn">ЖУРНАЛ</p>
+        <p id="carousel-us" class="nav-btn">ЖУРНАЛ</p>
     </div>
 
     <div class="nav-start">
@@ -38,7 +49,7 @@
             </button>
         </div>
 
-        <button class="get-started">УВIЙТИ</button>
+        <button id="openLogin" class="get-started">УВIЙТИ</button>
     </div>
     </nav>
 
@@ -48,74 +59,139 @@
     <div id="logo-main" class="main-container">
         <div class="hero-content">
             <img class="main-bg" src="images/a-bottle-of-perfume-is-on-a-white-background-photo.jpg" alt="">
-            <h2 class="main-h2">Essence Чистого Світла</h2>
+            <h2 class="main-h2"><span class="special-font">Essence </span>Чистого Світла</h2>
             <p class="main-p">Кураторська добірка ароматів, створених для того, щоб викликати враження безтурботності природи та елегантності мінімалізму</p>
             <button id="open" class="main-button">ВІДКРИЙТЕ АРОМАТИ</button>
         </div>
     </div>
 
-    <div id="about-us-btn" class="second-container">
+    <div class="about-container reveal" id="about-us-btn">
         <div class="about">
-            <div class="hero-about">
-                <p class="about-p">
-                    &nbsp;&nbsp;&nbsp;Наш магазин об’єднує найкращі світові шедеври парфумерії, щоб дарувати вам витонченість та впевненість у кожному моменті. Ми ретельно відбираємо кожен флакон, гарантуючи бездоганну якість та ексклюзивність для справжніх поціновувачів естетики.
-                </p>
-                <div class="about-img">
-                    <img class="about-image" src="images/hl 3.jpg" alt="">
+            <img class="about-bg" src="images/white-still-life-composition.jpg">
+
+            <div class="about-content">
+                <h2 class="about-title">Мистецтво аромату це:</h2>
+                <div class="word-wrapper">
+                    <span id="dynamicWord"></span>
                 </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="second-container">
+        
+        <div id="carousel-us-btn" class="carousel-title reveal">
+            <h1 class="carousel-h1">Бренди в асортименті</h1>
+        </div>
+
+        <div class="carousel reveal">
+            <div class="group">
+                <div class="brand">Chanel</div>
+                <div class="brand">Zara</div>
+                <div class="brand">Prada</div>
+                <div class="brand">Dior</div>
+                <div class="brand">Hugo BOSS</div>
+            </div>
+
+            <div aria-hidden class="group">
+                <div class="brand">Chanel</div>
+                <div class="brand">Zara</div>
+                <div class="brand">Prada</div>
+                <div class="brand">Dior</div>
+                <div class="brand">Hugo BOSS</div>
             </div>
         </div>
 
-        <h1 id="collection-btn" class="about-h1">Каталог товарiв</h1>
-        <p class="about-warning">Поки що це весь каталог, незабаром він поповниться</p>
+        <div id="collection-btn" class="cards-title reveal">
+            <h1 class="about-h1">Каталог товарiв</h1>
+        </div>
 
-        <div class="all-cards">
+        <p class="about-warning reveal">Поки що це весь каталог, незабаром він поповниться</p>
+
+        <div class="all-cards reveal">
             <div class="cards">
 
                 <div class="product-card">
-                    <img class="card-image" src="images/perfumes/mary-borozdina-fUTrfdCf-SA-unsplash.jpg" alt="Miss Dior">
+                    <img class="card-image" src="images/perfumesWebp/mary-borozdina-fUTrfdCf-SA-unsplash.webp" alt="Miss Dior">
                     <div class="product-info">
                         <h1 class="card-h1">Miss Dior Blooming Bouquet</h1>
                         <p class="card-p">Ніжна весняна півонія та роза</p>
                         <div class="price">
                             <h1 class="info-cost">$115</h1>
-                            <button class="card-buy">Придбати</button>
+
+                                <div class="buy-row">
+                                    <div class="product-count">
+                                        <button class="minus">−</button>
+                                        <span class="count">1</span>
+                                        <button class="plus">+</button>
+                                    </div>
+                                        <button class="card-buy"><img class="product-btn-img" src="images/icons/add_shopping_cart_40dp_000000_FILL0_wght400_GRAD0_opsz40.svg" alt=""></button>
+                                </div>
+
                         </div>
                     </div>
                 </div>
         
                 <div class="product-card">
-                    <img class="card-image" src="images/perfumes/rayson-tan-lUAcC4rlMIk-unsplash.jpg" alt="Ice-Cool Vigor">
+                    <img class="card-image" src="images/perfumesWebp/rayson-tan-lUAcC4rlMIk-unsplash.webp" alt="Ice-Cool Vigor">
                     <div class="product-info">
                         <h1 class="card-h1">Ice-Cool Vigor</h1>
                         <p class="card-p">Крижана свіжість та енергія цитрусу</p>
                         <div class="price">
                             <h1 class="info-cost">$45</h1>
-                            <button class="card-buy">Придбати</button>
+
+                            <div class="buy-row">
+                                <div class="product-count">
+                                    <button class="minus">−</button>
+                                    <span class="count">1</span>
+                                    <button class="plus">+</button>
+                                </div>
+                                    <button class="card-buy"><img class="product-btn-img" src="images/icons/add_shopping_cart_40dp_000000_FILL0_wght400_GRAD0_opsz40.svg" alt=""></button>
+                            </div>
+
                         </div>
                     </div>
                 </div>
         
                 <div class="product-card">
-                    <img class="card-image" src="images/perfumes/akhilesh-sharma-vf6DtLlwjTk-unsplash.jpg" alt="Amber Gold">
+                    <img class="card-image" src="images/perfumesWebp/akhilesh-sharma-vf6DtLlwjTk-unsplash.webp" alt="Amber Gold">
                     <div class="product-info">
                         <h1 class="card-h1">Amber Gold Edition</h1>
                         <p class="card-p">Тепла амбра та пряна розкіш</p>
                         <div class="price">
                             <h1 class="info-cost">$65</h1>
-                            <button class="card-buy">Придбати</button>
+                            
+                            <div class="buy-row">
+                                <div class="product-count">
+                                    <button class="minus">−</button>
+                                    <span class="count">1</span>
+                                    <button class="plus">+</button>
+                                </div>
+                                    <button class="card-buy"><img class="product-btn-img" src="images/icons/add_shopping_cart_40dp_000000_FILL0_wght400_GRAD0_opsz40.svg" alt=""></button>
+                            </div>
+
                         </div>
                     </div>
                 </div>
         
                 <div class="product-card">
-                    <img class="card-image" src="images/perfumes/bunny-sidhu--uIpJttpzIw-unsplash.jpg" alt="Hugo Boss">
+                    <img class="card-image" src="images/perfumesWebp/bunny-sidhu--uIpJttpzIw-unsplash.webp" alt="Hugo Boss">
                     <div class="product-info">
                         <h1 class="card-h1">Hugo Boss – BOSS Man</h1>
                         <p class="card-p">Деревна класика для впевнених чоловіків</p>
                         <div class="price">
                             <h1 class="info-cost">$85</h1>
-                            <button class="card-buy">Придбати</button>
+                            
+                            <div class="buy-row">
+                                <div class="product-count">
+                                    <button class="minus">−</button>
+                                    <span class="count">1</span>
+                                    <button class="plus">+</button>
+                                </div>
+                                    <button class="card-buy"><img class="product-btn-img" src="images/icons/add_shopping_cart_40dp_000000_FILL0_wght400_GRAD0_opsz40.svg" alt=""></button>
+                            </div>
+                            
                         </div>
                     </div>
                 </div>
@@ -124,49 +200,85 @@
             <div class="cards">
 
                 <div class="product-card">
-                    <img class="card-image" src="images/perfumes/kelvin-lutan-5f4yovjJw4c-unsplash.jpg" alt="Zara Seoul">
+                    <img class="card-image" src="images/perfumesWebp/kelvin-lutan-5f4yovjJw4c-unsplash.webp" alt="Zara Seoul">
                     <div class="product-info">
                         <h1 class="card-h1">Zara Seoul</h1>
-                        <p class="card-p">Свіжий міський аромат із нотами морського бризу та лаванди</p>
+                        <p class="card-p">Міський аромат із нотами морського бризу та лаванди</p>
                         <div class="price">
                             <h1 class="info-cost">$25</h1>
-                            <button class="card-buy">Придбати</button>
+                            
+                            <div class="buy-row">
+                                <div class="product-count">
+                                    <button class="minus">−</button>
+                                    <span class="count">1</span>
+                                    <button class="plus">+</button>
+                                </div>
+                                    <button class="card-buy"><img class="product-btn-img" src="images/icons/add_shopping_cart_40dp_000000_FILL0_wght400_GRAD0_opsz40.svg" alt=""></button>
+                            </div>
+
                         </div>
                     </div>
                 </div>
         
                 <div class="product-card">
-                    <img class="card-image" src="images/perfumes/maria-sime-XnK9AQFKbxs-unsplash.jpg" alt="Prada Paradoxe">
+                    <img class="card-image" src="images/perfumesWebp/maria-sime-XnK9AQFKbxs-unsplash.webp" alt="Prada Paradoxe">
                     <div class="product-info">
                         <h1 class="card-h1">Prada Paradoxe</h1>
-                        <p class="card-p">Витончений парфюм із яскравим акцентом неролі та амбри</p>
+                        <p class="card-p">Витончений парфюм із акцентом неролі та амбри</p>
                         <div class="price">
                             <h1 class="info-cost">$110</h1>
-                            <button class="card-buy">Придбати</button>
+                            
+                            <div class="buy-row">
+                                <div class="product-count">
+                                    <button class="minus">−</button>
+                                    <span class="count">1</span>
+                                    <button class="plus">+</button>
+                                </div>
+                                    <button class="card-buy"><img class="product-btn-img" src="images/icons/add_shopping_cart_40dp_000000_FILL0_wght400_GRAD0_opsz40.svg" alt=""></button>
+                            </div>
+
                         </div>
                     </div>
                 </div>
         
                 <div class="product-card">
-                    <img class="card-image" src="images/perfumes/olena-bohovyk-GOVTETevRm8-unsplash.jpg" alt="Chanel Gabrielle">
+                    <img class="card-image" src="images/perfumesWebp/olena-bohovyk-GOVTETevRm8-unsplash.webp" alt="Chanel Gabrielle">
                     <div class="product-info">
                         <h1 class="card-h1">Chanel Gabrielle</h1>
                         <p class="card-p">Розкішний сонячний мікс із чотирьох білих квітів</p>
                         <div class="price">
                             <h1 class="info-cost">$155</h1>
-                            <button class="card-buy">Придбати</button>
+                            
+                            <div class="buy-row">
+                                <div class="product-count">
+                                    <button class="minus">−</button>
+                                    <span class="count">1</span>
+                                    <button class="plus">+</button>
+                                </div>
+                                    <button class="card-buy"><img class="product-btn-img" src="images/icons/add_shopping_cart_40dp_000000_FILL0_wght400_GRAD0_opsz40.svg" alt=""></button>
+                            </div>
+
                         </div>
                     </div>
                 </div>
         
                 <div class="product-card">
-                    <img class="card-image" src="images/perfumes/sanket-mishra-pPI8K56j4Z4-unsplash.jpg" alt="The Icon Banderas">
+                    <img class="card-image" src="images/perfumesWebp/sanket-mishra-pPI8K56j4Z4-unsplash.webp" alt="The Icon Banderas">
                     <div class="product-info">
                         <h1 class="card-h1">The Icon Banderas</h1>
-                        <p class="card-p">Впевнений деревний аромат із пряним перцем та сандалом</p>
+                        <p class="card-p">Впевнений аромат із пряним перцем та сандалом</p>
                         <div class="price">
                             <h1 class="info-cost">$30</h1>
-                            <button class="card-buy">Придбати</button>
+                            
+                            <div class="buy-row">
+                                <div class="product-count">
+                                    <button class="minus">−</button>
+                                    <span class="count">1</span>
+                                    <button class="plus">+</button>
+                                </div>
+                                    <button class="card-buy"><img class="product-btn-img" src="images/icons/add_shopping_cart_40dp_000000_FILL0_wght400_GRAD0_opsz40.svg" alt=""></button>
+                            </div>
+
                         </div>
                     </div>
                 </div>
@@ -178,11 +290,11 @@
 </body>
 
 
-<footer id="footer-us-btn" class="footer">
+<footer class="footer">
     <div class="footer-columns">
         <div class="column column-left">
             <div class="footer-logo"></div>
-            <p class="column-p">ⒸEssence</p>
+            <p class="column-p">Ⓒ Essence</p>
             <p class="column-p">info@essence.com.ua</p>
             <p class="column-p">+38 (067) 482 19 36</p>
             <h1 class="column-p name">Розробник - Марченко Євген</h1>
@@ -195,9 +307,9 @@
         </div>
 
         <div class="socials">
-            <a href="#" class="social instagram"><i class="fa-brands fa-instagram"></i></a>
-            <a href="#" class="social tiktok"><i class="fa-brands fa-tiktok"></i></a>
-            <a href="#" class="social facebook"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#" class="social-footer instagram-ftr"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#" class="social-footer tiktok-ftr"><i class="fa-brands fa-tiktok"></i></a>
+            <a href="#" class="social-footer facebook-ftr"><i class="fa-brands fa-facebook-f"></i></a>
         </div>
     </div>
 </footer>
@@ -232,9 +344,52 @@
 </div>
 
 
+<div id="toast" class="toast">Товар додано у кошик</div>
+
+
+<div id="loginOverlay" class="login-overlay">
+    <div class="login-window">
+
+        <nav class="login-title">
+            <h1 class="login-h1">Увійти</h1>
+            <div id="closeLoginBtn">
+                <button id="closeLogin"><img class="cancel-icon" src="images/icons/close_40dp_000000_FILL0_wght400_GRAD0_opsz40.png" alt=""></button>
+            </div>
+        </nav>
+
+        <div class="login-main">
+            <div class="login-input">
+                <label class="name-input" for="email">Email:</label>
+                <input class="input" type="email" name="email" id="email">
+            </div>
+    
+            <div class="login-input">
+                <label class="name-input" for="password">Пароль:</label>
+                <input class="input" type="password" name="password" id="password">
+            </div>
+            
+            <div class="social-login">
+                <div class="social-icons">
+                    <button class="social-btn google"><img class="login-social-img" src="images/icons/google-icon-logo-svgrepo-com.svg"></button>
+                    <button class="social-btn apple"><img class="login-social-img" src="images/icons/apple-logo-svgrepo-com.svg"></button>
+                    <button class="social-btn facebook"><img class="login-social-img" src="images/icons/facebook-option-svgrepo-com.svg"></button>
+                </div>
+            </div>
+
+            <div class="submit-btn">
+                <input class="login-submit" type="submit" value="Авторизуватися">
+            </div>
+            
+        </div>
+        
+    </div>
+</div>
+
 
     <script src="script.js"></script>
     <script src="header.js"></script>
     <script src="scroll.js"></script>
     <script src="basket.js"></script>
+    <script src="login.js"></script>
+    <script src="word-wrapper.js"></script>
 </html>
